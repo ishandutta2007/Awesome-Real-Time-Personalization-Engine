@@ -7,6 +7,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Real-Time-Personalization-Engine/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Real-Time-Personalization-Engine?style=flat-square&logo=github&color=blue" alt="Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Real-Time-Personalization-Engine/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Real-Time-Personalization-Engine/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 <p align="center">
@@ -22,6 +23,8 @@
 - [💻 Open-Source Recommender & Personalization Engines](#-open-source-recommender--personalization-engines)
 - [🏗️ Reference Modern Real-Time Stack Architecture](#️-reference-modern-real-time-stack-architecture)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [⭐ Star History](#-star-history)
+- [💖 Support](#-support)
 - [⚖️ Disclaimer](#️-disclaimer)
 
 ---
@@ -137,6 +140,25 @@ We welcome additions, corrections, and benchmark submissions! 🚀
 
 ---
 
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Real-Time-Personalization-Engine&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Real-Time-Personalization-Engine&type=date&legend=top-left)
+
+---
+
+## 💖 Support
+
+Thank you for visiting and supporting the **Awesome Real-Time Personalization Engine** list! 
+
+If you find this repository valuable:
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and contribute** your favorite personalization tools, algorithms, and architectures.
+- 📢 **Share it** with fellow engineers, data scientists, and growth hackers.
+- ☕ **Buy me a coffee & support ongoing maintenance**:  
+  [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/ishandutta2007)
+
+---
+
 ## ⚖️ Disclaimer
 
 - This is a community-maintained curated educational resource and does not constitute financial or software endorsement.
@@ -147,3 +169,4 @@ We welcome additions, corrections, and benchmark submissions! 🚀
 <p align="center">
   <b>🌟 Star this repository if you find it helpful for your personalization architecture!</b>
 </p>
+
