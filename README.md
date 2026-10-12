@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Real-Time-Personalization-Engine/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Real-Time-Personalization-Engine?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Real-Time-Personalization-Engine/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Real-Time-Personalization-Engine?style=flat-square&logo=github&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Real-Time-Personalization-Engine/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Real-Time-Personalization-Engine?style=flat-square&logo=github&color=blue" alt="Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Real-Time-Personalization-Engine/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Real-Time-Personalization-Engine/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
@@ -69,9 +69,9 @@ The following hosted platforms provide fully managed multi-channel real-time per
 
 ## 💻 Open-Source Recommender & Personalization Engines
 
-High-performance open-source libraries, microservices, and platforms for self-hosting custom recommendation pipelines, multi-armed bandits, and real-time re-ranking. Sorted in descending order by GitHub stars.
+High-performance open-source libraries, microservices, and platforms for self-hosting custom recommendation pipelines, multi-armed bandits, and real-time re-ranking. Sorted in descending order by GitHub_Stars.
 
-| Repository | GitHub Stars | Description & Architecture Highlights | Primary Stack |
+| Repository | GitHub_Stars | Description & Architecture Highlights | Primary Stack |
 | :--- | :--- | :--- | :--- |
 | **[Milvus](https://github.com/milvus-io/milvus)** | [![Milvus Stars](https://img.shields.io/github/stars/milvus-io/milvus?style=social&color=white)](https://github.com/milvus-io/milvus/stargazers) | Cloud-native, distributed vector database engineered for billion-scale similarity search, powering modern semantic recommendation retrievals and real-time multimodal personalization. | Go, C++, Python |
 | **[Qdrant](https://github.com/qdrant/qdrant)** | [![Qdrant Stars](https://img.shields.io/github/stars/qdrant/qdrant?style=social&color=white)](https://github.com/qdrant/qdrant/stargazers) | High-performance vector similarity search engine with extended payload filtering, ideal for real-time recommendation filtering by stock, category, and user attributes. | Rust |
@@ -135,7 +135,7 @@ We welcome additions, corrections, and benchmark submissions! 🚀
 3. 📝 **Edit `README.md`**:
    - Provide accurate links and descriptions.
    - For SaaS tools: include verified starting tier pricing, explicit free tier / trial limits, and company size.
-   - For Open-Source tools: include official star badge with link to stargazers.
+   - For Open-Source tools: include official Stars_Badge with link to stargazers.
 4. 📬 **Submit a Pull Request** with a concise summary of the addition.
 
 ---
