@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1035" />
+    </linearGradient>
+
+    <!-- Vibrant Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.08)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.02)" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glowSubtle" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .bg { fill: url(#bgGrad); }
+    .grid-line { stroke: rgba(255, 255, 255, 0.04); stroke-width: 1; }
+    
+    /* Dynamic pulsing & flowing ambient elements */
+    .stream-line {
+      stroke: url(#accentGrad);
+      stroke-width: 2.5;
+      fill: none;
+      stroke-dasharray: 12 8;
+      animation: dashStream 25s linear infinite;
+    }
+
+    .pulse-orb {
+      animation: pulseAnimation 4s ease-in-out infinite alternate;
+    }
+
+    .pulse-orb-2 {
+      animation: pulseAnimation 6s ease-in-out infinite alternate-reverse;
+    }
+
+    .floating-card {
+      animation: floatMotion 6s ease-in-out infinite alternate;
+    }
+
+    .badge-pill {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      fill: #38bdf8;
+    }
+
+    .badge-pill-bg {
+      fill: rgba(56, 189, 248, 0.12);
+      stroke: rgba(56, 189, 248, 0.35);
+      stroke-width: 1;
+    }
+
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 17px;
+      fill: #94a3b8;
+    }
+
+    .highlight-text {
+      fill: url(#accentGrad);
+      font-weight: 800;
+    }
+
+    .stat-label {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11px;
+      fill: #64748b;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .stat-val {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      fill: #e2e8f0;
+      font-weight: 700;
+    }
+
+    @keyframes dashStream {
+      from { stroke-dashoffset: 500; }
+      to { stroke-dashoffset: 0; }
+    }
+
+    @keyframes pulseAnimation {
+      0% { opacity: 0.35; transform: scale(0.95); }
+      100% { opacity: 0.75; transform: scale(1.08); }
+    }
+
+    @keyframes floatMotion {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-8px); }
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" class="bg" />
+
+  <!-- Background Ambient Mesh Grid -->
+  <line x1="0" y1="60" x2="1200" y2="60" class="grid-line" />
+  <line x1="0" y1="120" x2="1200" y2="120" class="grid-line" />
+  <line x1="0" y1="180" x2="1200" y2="180" class="grid-line" />
+  <line x1="0" y1="240" x2="1200" y2="240" class="grid-line" />
+  <line x1="0" y1="300" x2="1200" y2="300" class="grid-line" />
+  <line x1="200" y1="0" x2="200" y2="360" class="grid-line" />
+  <line x1="400" y1="0" x2="400" y2="360" class="grid-line" />
+  <line x1="600" y1="0" x2="600" y2="360" class="grid-line" />
+  <line x1="800" y1="0" x2="800" y2="360" class="grid-line" />
+  <line x1="1000" y1="0" x2="1000" y2="360" class="grid-line" />
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <g class="pulse-orb" transform-origin="1020 90">
+    <circle cx="1020" cy="90" r="140" fill="#6366f1" opacity="0.18" filter="url(#glow)" />
+  </g>
+  <g class="pulse-orb-2" transform-origin="150 280">
+    <circle cx="150" cy="280" r="120" fill="#06b6d4" opacity="0.14" filter="url(#glow)" />
+  </g>
+
+  <!-- Dynamic Connected Stream Flows -->
+  <path d="M 0,290 Q 250,210 500,270 T 950,180 T 1200,210" class="stream-line" opacity="0.4" />
+  <path d="M 0,160 Q 350,90 700,190 T 1200,130" class="stream-line" opacity="0.25" style="animation-duration: 35s; stroke-dasharray: 8 6;" />
+
+  <!-- Right Side Interactive Diagram (Dynamic Data Pipelines) -->
+  <g class="floating-card" transform="translate(810, 65)">
+    <!-- Main Card Body -->
+    <rect x="0" y="0" width="330" height="230" rx="18" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5" />
+    
+    <!-- Mini Card Header -->
+    <circle cx="28" cy="30" r="6" fill="#ef4444" opacity="0.8" />
+    <circle cx="46" cy="30" r="6" fill="#f59e0b" opacity="0.8" />
+    <circle cx="64" cy="30" r="6" fill="#10b981" opacity="0.8" />
+    <text x="88" y="34" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8" font-weight="600">Decision Engine Pipeline</text>
+
+    <!-- Node 1: Event Stream -->
+    <rect x="25" y="62" width="82" height="42" rx="8" fill="rgba(14, 165, 233, 0.15)" stroke="#0ea5e9" stroke-width="1" />
+    <text x="66" y="81" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#38bdf8" font-weight="700">User Events</text>
+    <text x="66" y="94" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9" fill="#94a3b8">Sub-10ms</text>
+
+    <!-- Node 2: Multi-Armed Bandit / Rec Model -->
+    <rect x="135" y="62" width="82" height="42" rx="8" fill="rgba(139, 92, 246, 0.15)" stroke="#8b5cf6" stroke-width="1" />
+    <text x="176" y="81" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#a78bfa" font-weight="700">MAB / LTR</text>
+    <text x="176" y="94" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9" fill="#94a3b8">Inference</text>
+
+    <!-- Node 3: Personalized Payload -->
+    <rect x="245" y="62" width="60" height="42" rx="8" fill="rgba(236, 72, 153, 0.15)" stroke="#ec4899" stroke-width="1" />
+    <text x="275" y="81" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#f472b6" font-weight="700">Action</text>
+    <text x="275" y="94" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9" fill="#94a3b8">UI Delivery</text>
+
+    <!-- Connecting Arrows -->
+    <path d="M 108 83 L 133 83" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+    <polygon points="133,80 138,83 133,86" fill="#38bdf8" />
+    <path d="M 218 83 L 243 83" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" />
+    <polygon points="243,80 248,83 243,86" fill="#a78bfa" />
+
+    <!-- Analytics Waveform Visualization -->
+    <g transform="translate(25, 126)">
+      <rect x="0" y="0" width="280" height="80" rx="10" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255, 255, 255, 0.05)" />
+      
+      <!-- Graph Lines -->
+      <path d="M 15 55 Q 50 15 85 45 T 155 30 T 225 15 T 265 40" fill="none" stroke="url(#accentGrad)" stroke-width="2.5" />
+      <circle cx="225" cy="15" r="4" fill="#38bdf8" filter="url(#glowSubtle)" />
+      <text x="233" y="14" font-family="-apple-system, sans-serif" font-size="9" fill="#38bdf8" font-weight="700">+38% CTR</text>
+
+      <text x="15" y="70" font-family="-apple-system, sans-serif" font-size="9" fill="#64748b">Dynamic Adaptive Personalization</text>
+      <text x="235" y="70" font-family="-apple-system, sans-serif" font-size="9" fill="#10b981" font-weight="600">⚡ LIVE</text>
+    </g>
+  </g>
+
+  <!-- FOREGROUND TEXT ELEMENTS (Clear, legible, un-obscured) -->
+  <g transform="translate(70, 75)">
+    <!-- Category Badge Pill -->
+    <g>
+      <rect x="0" y="0" width="275" height="28" rx="14" class="badge-pill-bg" />
+      <circle cx="14" cy="14" r="4" fill="#38bdf8" filter="url(#glowSubtle)" />
+      <text x="28" y="18" class="badge-pill">CURATED ECOSYSTEM &amp; BENCHMARKS</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="76" class="title-text">
+      Real-Time <tspan class="highlight-text">Personalization</tspan> Engine
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="116" class="subtitle-text">
+      Production-ready architectures, recommender engines, and behavioral targeting platforms.
+    </text>
+
+    <!-- Metric / Feature Highlights -->
+    <g transform="translate(0, 155)">
+      <!-- Item 1 -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="0" class="stat-label">Decision Latency</text>
+        <text x="0" y="24" class="stat-val">&lt; 15ms Real-Time</text>
+      </g>
+      
+      <!-- Divider -->
+      <line x1="160" y1="-8" x2="160" y2="30" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+
+      <!-- Item 2 -->
+      <g transform="translate(185, 0)">
+        <text x="0" y="0" class="stat-label">Coverage</text>
+        <text x="0" y="24" class="stat-val">SaaS &amp; Open-Source</text>
+      </g>
+
+      <!-- Divider -->
+      <line x1="370" y1="-8" x2="370" y2="30" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+
+      <!-- Item 3 -->
+      <g transform="translate(395, 0)">
+        <text x="0" y="0" class="stat-label">Intelligence</text>
+        <text x="0" y="24" class="stat-val">MAB • LTR • Vector AI</text>
+      </g>
+    </g>
+  </g>
+</svg>
